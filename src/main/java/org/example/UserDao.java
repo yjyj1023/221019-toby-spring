@@ -6,10 +6,12 @@ import java.util.Map;
 
 public class UserDao {
     private ConnectionMaker connectionMaker;
-    public UserDao(){
+    public UserDao()
+    {
         this.connectionMaker = new AWSConnectionMaker();
     }
     public UserDao(ConnectionMaker connectionMaker){
+
         this.connectionMaker = new AWSConnectionMaker();
     }
 
